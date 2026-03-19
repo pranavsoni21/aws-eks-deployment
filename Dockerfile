@@ -1,11 +1,23 @@
-FROM python:3.14-slim
+
+# STAGE 0
+
+FROM python:3.14-slim AS builder
 
 WORKDIR /app
 
-COPY *.py .
+COPY requirements.txt .
 
-RUN pip install flask
+RUN pip install --no-cache-dir --prefix=/install -r requirements.txt
 
-EXPOSE 5000
 
-CMD ["python3", "app.py"] 
+# STAGE 1
+
+FROM python:3.14-alpine
+
+WORKDIR /app
+
+COPY --from=builder /install /usr/local
+
+COPY app/ .
+
+CMD ["gunicorn", "--bind", "0.0.0.0:5000", "app:app"]
