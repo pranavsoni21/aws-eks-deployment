@@ -1,3 +1,4 @@
+venv/
 .idea/
 terraform/.terraform/
 terraform/.terraform.lock.hcl
