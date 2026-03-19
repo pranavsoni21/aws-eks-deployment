@@ -53,8 +53,3 @@ resource "aws_iam_role_policy_attachment" "ecr_policy" {
   policy_arn = "arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly"
   role       = aws_iam_role.eks_node_role.name
 }
-
-resource "aws_iam_role_policy_attachment" "secret_manager_policy" {
-  policy_arn = "arn:aws:iam::aws:policy/AWSSecretsManagerClientReadOnlyAccess"
-  role       = aws_iam_role.eks_node_role.name
-}
