@@ -30,12 +30,6 @@ spec:
               name: app-config
               key: APP_VERSION
 
-        - name: DB_PASSWORD
-          valueFrom:
-            secretKeyRef:
-              name: db-secret
-              key: DB_PASSWORD
-
       imagePullSecrets:
       - name: ecr-secret
 
