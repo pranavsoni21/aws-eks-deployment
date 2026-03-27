@@ -3,9 +3,9 @@ kind: Ingress
 metadata:
   name: flask-ingress
 spec:
-  host: myapp.com
   rules:
-  - http:
+  - host: myapp.com
+    http:
       paths:
       - path: /
         pathType: Prefix
