@@ -12,7 +12,7 @@ RUN pip install --no-cache-dir --prefix=/install -r requirements.txt
 
 # STAGE 1
 
-FROM python:3.14-alpine
+FROM python:3.14-slim
 
 WORKDIR /app
 
