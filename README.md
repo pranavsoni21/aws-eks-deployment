@@ -9,7 +9,7 @@ description: >-
 
 #### Architecture Diagram
 
-<figure><img src="../.gitbook/assets/lb_target_type_instance.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/user-attachments/assets/e4a7ceab-443c-4126-837e-41cdd06d4633" alt=""><figcaption></figcaption></figure>
 
 ***
 
