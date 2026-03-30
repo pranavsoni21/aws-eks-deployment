@@ -7,6 +7,10 @@ description: >-
 
 # AWS-EKS-Deployment
 
+GitHub repository url: [https://github.com/pranavsoni21/aws-eks-deployment](https://github.com/pranavsoni21/aws-eks-deployment)
+
+Readme on portfolio website: [https://pranavsoni.gitbook.io/pranavsoni/projects/aws-eks-deployment](https://pranavsoni.gitbook.io/pranavsoni/projects/aws-eks-deployment)
+
 #### Architecture Diagram
 
 <figure><img src="https://github.com/user-attachments/assets/e4a7ceab-443c-4126-837e-41cdd06d4633" alt=""><figcaption></figcaption></figure>
